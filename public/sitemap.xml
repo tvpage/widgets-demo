@@ -17,4 +17,8 @@
     <loc>/poc-demo.netlify.com/solo/std-iframe-static/</loc>
   </url>
   
+  <url>
+    <loc>/poc-demo.netlify.com/solo/std-vs-lazy/</loc>
+  </url>
+  
 </urlset>

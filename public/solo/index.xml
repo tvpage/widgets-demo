@@ -35,5 +35,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Std vs Lazy</title>
+      <link>/poc-demo.netlify.com/solo/std-vs-lazy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/poc-demo.netlify.com/solo/std-vs-lazy/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
