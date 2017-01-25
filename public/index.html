@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Std vs Lazy</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  
+  <div style="max-width:640px">
+    <h1>static data using iframe</h1>
+    <!-- static using iframe -->
+    <a class="tvp-solo"
+    data-id="solo-1"
+    data-domain='//pocsite.netlify.com'
+    href='//pocsite.netlify.com/tvpwidget/solo-1/'>
+    TVPage Solo
+    </a>  
+  </div>
+
+  
+  <div style="max-width:640px">
+    <h1>dynamic data using iframe</h1>
+    <!-- dynamic using iframe -->
+    <div class="tvp-solo"
+    data-id="solo-2"
+    data-domain='//pocsite.netlify.com'>
+    TVPage Widget
+    </div>
+    <script>
+      window.__TVPage__ = window.__TVPage__ || {};
+      __TVPage__.config = __TVPage__.config || {};
+      __TVPage__.config['solo-2'] = {
+        loginid: '1758799',
+        channel: {
+          id: '84956291',
+          parameters: {
+            referenceId: 'test'
+          }
+        }
+      };
+    </script>
+  </div>
+  
+  <div style="max-width:640px">
+    <!-- dynamic using an inline -->
+    <div class="tvp-solo"
+    data-id="solo-3"
+    data-embedmethod="inline"
+    data-domain='//pocsite.netlify.com'>
+    TVPage Widget
+    </div>
+    <script>
+      window.__TVPage__ = window.__TVPage__ || {};
+      __TVPage__.config = __TVPage__.config || {};
+      __TVPage__.config['solo-3'] = {
+        loginid: '1758799',
+        channel: {
+          id: '84956291',
+          parameters: {
+            referenceId: '01'
+          }
+        }
+      };
+    </script>
+  </div>
+  
+  <script src="//pocsite.netlify.com/loader.js"></script>
+
+</body>
+</html>
