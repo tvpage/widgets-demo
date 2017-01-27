@@ -2,35 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/</loc>
+    <loc>/poc-demo.netlify.com/</loc>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/solo/host-page-multiple/</loc>
+    <loc>/poc-demo.netlify.com/solo/host-page-multiple/</loc>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/solo/host-page/</loc>
+    <loc>/poc-demo.netlify.com/solo/host-page/</loc>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/solo/</loc>
+    <loc>/poc-demo.netlify.com/solo/</loc>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/solo/all-together/</loc>
+    <loc>/poc-demo.netlify.com/solo/all-together/</loc>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/solo/inline-dynamic/</loc>
+    <loc>/poc-demo.netlify.com/solo/inline-dynamic/</loc>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/solo/iframe-dynamic/</loc>
+    <loc>/poc-demo.netlify.com/solo/inline-dynamic-host/</loc>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/solo/iframe-static/</loc>
+    <loc>/poc-demo.netlify.com/solo/inline-static/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/inline-static-host/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/iframe-dynamic/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/iframe-dynamic-host/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/iframe-static/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/iframe-static-host/</loc>
   </url>
   
 </urlset>

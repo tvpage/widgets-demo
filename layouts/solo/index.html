@@ -13,6 +13,14 @@
     padding: 0;
     margin: 0 auto;
   }
+  .separator:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0;
+    background: #000;
+  }
 </style>
 <body>
 
@@ -20,11 +28,15 @@
   <h2>Load Speed Test</h2>
   <a href="https://tvpage.atlassian.net/browse/CS-3222">CS-3222</a>
   <ul>
-    <li><a href="/solo/all-together">All together</a></li>
-    <li><a href="/solo/inline-dynamic">Inline Dynamic</a></li>
-    <li><a href="/solo/iframe-dynamic">Iframe Dynamic</a></li>
-    <li><a href="/solo/iframe-static">Iframe Static</a></li>
-    <li><a href="/solo/iframe-static">Iframe Static</a></li>
+    <li class="separator"><a href="/solo/all-together">All combinations together</a></li>
+    <li><a href="/solo/inline-dynamic">Inline Dynamic on blank page</a></li>
+    <li><a href="/solo/inline-static">Inline Static on blank page</a></li>
+    <li><a href="/solo/iframe-dynamic">Iframe Dynamic on blank page</a></li>
+    <li class="separator"><a href="/solo/inline-static">Inline Static on blank page</a></li>
+    <li><a href="/solo/inline-dynamic-host">Inline Dynamic on host page</a></li>
+    <li><a href="/solo/inline-static-host">Inline Static on host page</a></li>
+    <li><a href="/solo/iframe-dynamic-host">Iframe Dynamic on host page</a></li>
+    <li><a href="/solo/iframe-static-host">Iframe Static on host page</a></li>
   </ul>
 </div>
 

@@ -15,81 +15,95 @@
   }
 </style>
 <body>
-
-
-  <h2>Dynamic using iframe</h2>
-  <a class="tvp-solo"
-  data-id="solo-2"
-  data-domain='//pocsite.netlify.com'>
-  TVPage Widget
-  </a>
-  <script>
-    window.__TVPage__ = window.__TVPage__ || {};
-    __TVPage__.config = __TVPage__.config || {};
-    __TVPage__.config['solo-2'] = {
-      loginid: '1758799',
-      channel: {
-        id: '84956291',
-        parameters: {
-          referenceId: 'test'
+  
+  <div>
+    <h2>Iframe dynamic</h2>
+    <a class="tvp-solo"
+    data-id="solo-2"
+    data-domain='//pocsite.netlify.com'>
+    TVPage Widget
+    </a>
+    <script>
+      window.__TVPage__ = window.__TVPage__ || {};
+      __TVPage__.config = __TVPage__.config || {};
+      __TVPage__.config['solo-2'] = {
+        loginid: '1758799',
+        channel: {
+          id: '84956291',
+          parameters: {
+            referenceId: 'test'
+          }
         }
-      }
-    };
+      };
 
-    (function(d,l) {
+      (function(d,l) {
+        var s = d.createElement('script');
+        if (d.getElementById(l)) return;
+        s.src = '//pocsite.netlify.com/loader.min.js';
+        s.id = l;
+        d.body.appendChild(s);
+      })(document,'tvp-loader');
+    </script>
+    <script src="https://gist.github.com/rfornes/c6934072793984417357ffc73ddb61c7.js"></script>
+  </div>
+
+  <div>
+    <h2>Iframe static</h2>
+    <a class="tvp-solo"
+    data-id="solo-1"
+    data-domain='//pocsite.netlify.com'
+    href='//pocsite.netlify.com/tvpwidget/solo-1/'>
+      TVPage Solo
+    </a>
+    <script>
+      (function(d,l) {
       var s = d.createElement('script');
       if (d.getElementById(l)) return;
       s.src = '//pocsite.netlify.com/loader.min.js';
       s.id = l;
       d.body.appendChild(s);
     })(document,'tvp-loader');
-  </script>
+    </script>
+    <script src="https://gist.github.com/rfornes/ce8196532cbfc83a6ab07a7840471582.js"></script>
+  </div>
 
-  <h2>Dynamic using inline</h2>
-  <a class="tvp-solo"
-  data-id="solo-3"
-  data-embedmethod="inline"
-  data-domain='//pocsite.netlify.com'>
-  TVPage Widget
-  </a>
-  <script>
-    window.__TVPage__ = window.__TVPage__ || {};
-    __TVPage__.config = __TVPage__.config || {};
-    __TVPage__.config['solo-3'] = {
-      loginid: '1758799',
-      channel: {
-        id: '84956291',
-        parameters: {
-          referenceId: '01'
+  <div>
+    <h2>Inline dynamic</h2>
+    <a class="tvp-solo"
+    data-id="solo-3"
+    data-embedmethod="inline"
+    data-domain='//pocsite.netlify.com'>
+    TVPage Widget
+    </a>
+    <script>
+      window.__TVPage__ = window.__TVPage__ || {};
+      __TVPage__.config = __TVPage__.config || {};
+      __TVPage__.config['solo-3'] = {
+        loginid: '1758799',
+        channel: {
+          id: '84956291',
+          parameters: {
+            referenceId: '01'
+          }
         }
-      }
-    };
-    
-    (function(d,l) {
-      var s = d.createElement('script');
-      if (d.getElementById(l)) return;
-      s.src = '//pocsite.netlify.com/loader.min.js';
-      s.id = l;
-      d.body.appendChild(s);
-    })(document,'tvp-loader');
-  </script>
+      };
+      
+      (function(d,l) {
+        var s = d.createElement('script');
+        if (d.getElementById(l)) return;
+        s.src = '//pocsite.netlify.com/loader.min.js';
+        s.id = l;
+        d.body.appendChild(s);
+      })(document,'tvp-loader');
+    </script>
+    <script src="https://gist.github.com/rfornes/54372853bd2886e26d268ba3e731ade9.js"></script>
+  </div>
 
-  <h2>Static using iframe</h2>
-  <a class="tvp-solo"
-  data-id="solo-1"
-  data-domain='//pocsite.netlify.com'
-  href='//pocsite.netlify.com/tvpwidget/solo-1/'>
-    TVPage Solo
-  </a>
-  <script>
-    (function(d,l) {
-    var s = d.createElement('script');
-    if (d.getElementById(l)) return;
-    s.src = '//pocsite.netlify.com/loader.min.js';
-    s.id = l;
-    d.body.appendChild(s);
-  })(document,'tvp-loader');
-  </script>
+  <div>
+    <h2>Inline static</h2>
+    <style>.tvpplayer{padding-bottom:56.25%;height:0;width:100%;position:relative}#tvpplayer-target{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}#tvpplayer-play{display:none;position:absolute;width:65px;height:65px;background-color:#db5726;top:0;bottom:0;left:0;right:0;margin:auto;z-index:999999;cursor:pointer}#tvpplayer-play:after{content:" ";display:block;width:0;height:0;border-top:15px solid transparent;border-bottom:15px solid transparent;border-left:29px solid #fff;position:absolute;left:0;right:0;top:0;bottom:0;margin:auto}</style><div class=tvpplayer><div id=tvpplayer-target></div><div id=tvpplayer-play></div></div><script src=//a.tvpage.com/tvpa.min.js></script><script src=//appcdn.tvpage.com/player/assets/tvp/tvp-1.8.4-min.js></script><script>!function(){var e=(/Mobi/.test(navigator.userAgent),function(e,t){return"undefined"!=typeof e[t]}),t=0,n=function(e){if(!e||!e.asset)return console.log("no asset");var t=e.asset;return t.analyticsObj={vd:e.id,li:e.loginId,pg:e.parentId?e.parentId:0},t.sources||(t.sources=[{file:t.videoId}]),t.type=t.type||"youtube",t},i=function(e,t){var n=document.getElementById("tvpplayer-play");"mp4"==e.type?(n.style.display="block",n.addEventListener("click",function(){this.style.display="none",t&&t.play()},!1)):n.style.display="none"},o=0;!function a(){setTimeout(function(){if(e(window,"_tvpa")&&e(window,"TVPage")){_tvpa.push(["config",{li:"1758799",gaDomain:"www.tvpage.tv",logUrl:"//api.tvpage.com/v1/__tvpa.gif"}]),_tvpa.push(["track","ci",{li:"1758799"}]);var s,r=[];new TVPage.player({divId:"tvpplayer-target",controls:{active:!0,seekBar:{progressColor:"#E57211"},floater:{removeControls:["tvplogo","hd"],transcript:!1}},poster:!0,techOrder:"html5,flash",analytics:{tvpa:!1},apiBaseUrl:"//api.tvpage.com/v1",swf:"//appcdn.tvpage.com/player/assets/tvp/tvp-1.8.4-flash.swf",onReady:function(e,o){s=o;var a=function(){s.resize(s.options.DOMContainer.clientWidth,s.options.DOMContainer.clientHeight)};a(),window.onresize=a,s.options.DOMContainer.getElementsByClassName("tvp-progress-bar")[0].style["background-color"]=s.options.controls.seekBar.progressColor;var u;u="83094489";var d;if(d="66133904",!u&&d){var l={data:[{asset:{prettyDuration:"00:04:15",thumbnailUrl:"https://i.ytimg.com/vi/PAu4TajHYLk/hqdefault.jpg",type:"youtube",videoId:"PAu4TajHYLk"},date_created:"1482279976",description:'Perhaps the most famous "Morning" song.  Composed by Edvard Grieg (1843-1907)\nBelongs in a class by itself.  \n(It is also known as "Morgenstimmung.")\nNo copyright intention.  None of the videos are mine.\nWatch in HD (if possible).\nAnother great morning song is Rossini\'s "Morning Song" (see playlist).',id:"83106068",tags:null,title:"Classical Music - Morning Mood (Grieg)",url:"/Coffee-House-Vibes/Classical-Music-Morning-Mood-Grieg/66133904-83106068"},{asset:{prettyDuration:"00:02:48",thumbnailUrl:"https://i.ytimg.com/vi/8ju-OSYESi8/hqdefault.jpg",type:"youtube",videoId:"8ju-OSYESi8"},date_created:"1482281617",description:"Provided to YouTube by The state51 Conspiracy\n\nOver The Rainbow · Cafe Piano Music Collection\n\nMorning Coffee - The Best Instrumental Lounge Music for Wake Up, Start a Good Day with Relaxing Piano and Soft Guitar, Mood Music\n\n℗ 2015 New Jazz Records\n\nReleased on: 2015-10-05\n\nComposer: Sacchetto G.\nMusic Publisher: Rehegoo Music Edition\n\nAuto-generated by YouTube.",id:"83106071",tags:null,title:"Over The Rainbow",url:"/Coffee-House-Vibes/Over-The-Rainbow/66133904-83106071"},{asset:{prettyDuration:"00:03:36",thumbnailUrl:"https://i.ytimg.com/vi/-Ir8t3Ksbcg/hqdefault.jpg",type:"youtube",videoId:"-Ir8t3Ksbcg"},date_created:"1482281626",description:"Provided to YouTube by The state51 Conspiracy\n\nEasy Listening (Relaxation Music) · Cafe Piano Music Collection\n\nMorning Coffee - The Best Instrumental Lounge Music for Wake Up, Start a Good Day with Relaxing Piano and Soft Guitar, Mood Music\n\n℗ 2015 New Jazz Records\n\nReleased on: 2015-10-05\n\nComposer: Sacchetto G.\nMusic Publisher: Rehegoo Music Edition\n\nAuto-generated by YouTube.",id:"83106072",tags:null,title:"Easy Listening (Relaxation Music)",url:"/Coffee-House-Vibes/Easy-Listening-Relaxation-Music/66133904-83106072"},{asset:{prettyDuration:"00:02:45",thumbnailUrl:"https://i.ytimg.com/vi/Wrl8cJcUask/hqdefault.jpg",type:"youtube",videoId:"Wrl8cJcUask"},date_created:"1482281632",description:"Provided to YouTube by The state51 Conspiracy\n\nSunrise, Sunset · Cafe Piano Music Collection\n\nMorning Coffee - The Best Instrumental Lounge Music for Wake Up, Start a Good Day with Relaxing Piano and Soft Guitar, Mood Music\n\n℗ 2015 New Jazz Records\n\nReleased on: 2015-10-05\n\nComposer: Sacchetto G.\nMusic Publisher: Rehegoo Music Edition\n\nAuto-generated by YouTube.",id:"83106073",tags:null,title:"Sunrise, Sunset",url:"/Coffee-House-Vibes/Sunrise-Sunset/66133904-83106073"},{asset:{prettyDuration:"00:02:51",thumbnailUrl:"https://i.ytimg.com/vi/A_1Ax9-7uP0/hqdefault.jpg",type:"youtube",videoId:"A_1Ax9-7uP0"},date_created:"1482281639",description:"Provided to YouTube by The state51 Conspiracy\n\nBlue Bossa · Cafe Piano Music Collection\n\nMorning Coffee - The Best Instrumental Lounge Music for Wake Up, Start a Good Day with Relaxing Piano and Soft Guitar, Mood Music\n\n℗ 2015 New Jazz Records\n\nReleased on: 2015-10-05\n\nComposer: Sacchetto G.\nMusic Publisher: Rehegoo Music Edition\n\nAuto-generated by YouTube.",id:"83106074",tags:null,title:"Blue Bossa",url:"/Coffee-House-Vibes/Blue-Bossa/66133904-83106074"},{asset:{prettyDuration:"00:03:03",thumbnailUrl:"https://i.ytimg.com/vi/CTwXSaG1RT0/hqdefault.jpg",type:"youtube",videoId:"CTwXSaG1RT0"},date_created:"1482281646",description:"Provided to YouTube by The state51 Conspiracy\n\nMusic Life · Cafe Piano Music Collection\n\nMorning Coffee - The Best Instrumental Lounge Music for Wake Up, Start a Good Day with Relaxing Piano and Soft Guitar, Mood Music\n\n℗ 2015 New Jazz Records\n\nReleased on: 2015-10-05\n\nComposer: Sacchetto G.\nMusic Publisher: Rehegoo Music Edition\n\nAuto-generated by YouTube.",id:"83106075",tags:null,title:"Music Life",url:"/Coffee-House-Vibes/Music-Life/66133904-83106075"},{asset:{prettyDuration:"00:02:54",thumbnailUrl:"https://i.ytimg.com/vi/fou33gQSpW8/hqdefault.jpg",type:"youtube",videoId:"fou33gQSpW8"},date_created:"1482281653",description:"Provided to YouTube by The state51 Conspiracy\n\nImagine · Cafe Piano Music Collection\n\nMorning Coffee - The Best Instrumental Lounge Music for Wake Up, Start a Good Day with Relaxing Piano and Soft Guitar, Mood Music\n\n℗ 2015 New Jazz Records\n\nReleased on: 2015-10-05\n\nComposer: Sacchetto G.\nMusic Publisher: Rehegoo Music Edition\n\nAuto-generated by YouTube.",id:"83106076",tags:null,title:"Imagine",url:"/Coffee-House-Vibes/Imagine/66133904-83106076"},{asset:{prettyDuration:"00:02:39",thumbnailUrl:"https://i.ytimg.com/vi/Rw7KLvEp4JU/hqdefault.jpg",type:"youtube",videoId:"Rw7KLvEp4JU"},date_created:"1482281660",description:"Provided to YouTube by The state51 Conspiracy\n\nThanksgiving · Cafe Piano Music Collection\n\nMorning Coffee - The Best Instrumental Lounge Music for Wake Up, Start a Good Day with Relaxing Piano and Soft Guitar, Mood Music\n\n℗ 2015 New Jazz Records\n\nReleased on: 2015-10-05\n\nComposer: Sacchetto G.\nMusic Publisher: Rehegoo Music Edition\n\nAuto-generated by YouTube.",id:"83106077",tags:null,title:"Thanksgiving",url:"/Coffee-House-Vibes/Thanksgiving/66133904-83106077"},{asset:{prettyDuration:"00:04:10",thumbnailUrl:"https://i.ytimg.com/vi/nlc5bLcKSLg/hqdefault.jpg",type:"youtube",videoId:"nlc5bLcKSLg"},date_created:"1482281666",description:"Provided to YouTube by The Orchard Enterprises\n\nBlack Orpheus · Ginger Tunes\n\nJazz Lounge Essentials\n\n℗ 2015 Deep Sleep Music\n\nReleased on: 2015-01-28\n\nAuto-generated by YouTube.",id:"83106078",tags:null,title:"Black Orpheus",url:"/Coffee-House-Vibes/Black-Orpheus/66133904-83106078"},{asset:{prettyDuration:"00:03:53",thumbnailUrl:"https://i.ytimg.com/vi/bYpenX8i9pc/hqdefault.jpg",type:"youtube",videoId:"bYpenX8i9pc"},date_created:"1482281673",description:"Provided to YouTube by The Orchard Enterprises\n\nBossa Scousa · Ginger Tunes\n\nRelaxing Jazz Lounge\n\n℗ 2015 Smoke City\n\nReleased on: 2015-03-25\n\nMusic Publisher: Ameritz Music Ltd\n\nAuto-generated by YouTube.",id:"83106079",tags:null,title:"Bossa Scousa",url:"/Coffee-House-Vibes/Bossa-Scousa/66133904-83106079"},{asset:{prettyDuration:"00:05:36",thumbnailUrl:"https://i.ytimg.com/vi/l-XPBvR4gkk/hqdefault.jpg",type:"youtube",videoId:"l-XPBvR4gkk"},date_created:"1482281680",description:"Provided to YouTube by The Orchard Enterprises\n\nDrifting · Ginger Tunes\n\nRelaxing Café Instrumental Jazz\n\n℗ 2015 Deep Sleep Music\n\nReleased on: 2015-02-04\n\nMusic Publisher: Ameritz Music Ltd\n\nAuto-generated by YouTube.",id:"83106080",tags:null,title:"Drifting",url:"/Coffee-House-Vibes/Drifting/66133904-83106080"},{asset:{prettyDuration:"00:07:03",thumbnailUrl:"https://i.ytimg.com/vi/4_Fsi1DCrD4/hqdefault.jpg",type:"youtube",videoId:"4_Fsi1DCrD4"},date_created:"1482281687",description:"Provided to YouTube by The Orchard Enterprises\n\nWave · Ginger Tunes\n\nJazz Lounge Essentials\n\n℗ 2015 Deep Sleep Music\n\nReleased on: 2015-01-28\n\nAuto-generated by YouTube.",id:"83106081",tags:null,title:"Wave",url:"/Coffee-House-Vibes/Wave/66133904-83106081"}],pageNumber:1};r=l.data}else r.push({VIDEO_LENGTH:"SHORT",asset:{author:"Ninja Coffee Bar",description:"Take advantage of the Ninja Coffee Bar™ brewer’s Over-Ice Brew by using the right amount of the right ice. \n\nFor more information, visit http://bit.ly/2cQl07J",mediaDuration:26,prettyDuration:"00:00:26",thumbnailUrl:"https://i.ytimg.com/vi/mNUykALc_5Y/hqdefault.jpg",title:"Perfecting your Iced Coffee",type:"youtube",uploadDate:1474983984,videoId:"mNUykALc_5Y",views:"884"},category:"",date_created:"1474983984",date_modified:"1482179403",description:"Take advantage of the Ninja Coffee Bar™ brewer’s Over-Ice Brew by using the right amount of the right ice. \n\nFor more information, visit http://bit.ly/2cQl07J",duration:26,entityIdChild:"83094489",entityIdParent:"66133905",entityType:"1",id:"83094489",loginId:"1758799",referenceId:"mNUykALc_5Y",relationId:"4885616",settings:"",sortOrder:"1",sourceId:"4",status:"approved",tags:"",title:"Perfecting your Iced Coffee",titleTextEncoded:"Perfecting-your-Iced-Coffee",transcripts:"",visibility:"1"});s.cueVideo(n(r[t])),i(n(r[t]),s)},onStateChange:function(e){"undefined"!=typeof e&&"tvp:media:videoended"==e&&(s.cueVideo(n(r[t])),i(n(r[t]),s))}})}else++o<10?a():console.log("reached checks limit")},300)}()}()</script>
+    <script src="https://gist.github.com/rfornes/36821067cf10d2c9cd94bd7be8099c70.js"></script>
+  </div>
   
 </body>
 </html>
