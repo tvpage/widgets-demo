@@ -2,27 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/poc-demo.netlify.com/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/</loc>
   </url>
   
   <url>
-    <loc>/poc-demo.netlify.com/solo/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/solo/host-page-multiple/</loc>
   </url>
   
   <url>
-    <loc>/poc-demo.netlify.com/solo/all-together/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/solo/host-page/</loc>
   </url>
   
   <url>
-    <loc>/poc-demo.netlify.com/solo/inline-dynamic/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/solo/</loc>
   </url>
   
   <url>
-    <loc>/poc-demo.netlify.com/solo/iframe-dynamic/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/solo/all-together/</loc>
   </url>
   
   <url>
-    <loc>/poc-demo.netlify.com/solo/iframe-static/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/solo/inline-dynamic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/solo/iframe-dynamic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/solo/iframe-static/</loc>
   </url>
   
 </urlset>

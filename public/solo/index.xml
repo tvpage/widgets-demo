@@ -2,54 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Solo-rsses on My New Hugo Site</title>
-    <link>poc-demo.netlify.com/solo/index.xml</link>
+    <link>http://replace-this-with-your-hugo-site.com/solo/index.xml</link>
     <description>Recent content in Solo-rsses on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="poc-demo.netlify.com/solo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://replace-this-with-your-hugo-site.com/solo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Solo</title>
-      <link>/poc-demo.netlify.com/solo/</link>
+      <link>http://replace-this-with-your-hugo-site.com/solo/host-page-multiple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/poc-demo.netlify.com/solo/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/solo/host-page-multiple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solo</title>
+      <link>http://replace-this-with-your-hugo-site.com/solo/host-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/solo/host-page/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solo</title>
+      <link>http://replace-this-with-your-hugo-site.com/solo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/solo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Solo All together</title>
-      <link>/poc-demo.netlify.com/solo/all-together/</link>
+      <link>http://replace-this-with-your-hugo-site.com/solo/all-together/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/poc-demo.netlify.com/solo/all-together/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/solo/all-together/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Solo Inline Dynamic</title>
-      <link>/poc-demo.netlify.com/solo/inline-dynamic/</link>
+      <link>http://replace-this-with-your-hugo-site.com/solo/inline-dynamic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/poc-demo.netlify.com/solo/inline-dynamic/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/solo/inline-dynamic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Solo Lazy Iframe Dynamic</title>
-      <link>/poc-demo.netlify.com/solo/iframe-dynamic/</link>
+      <link>http://replace-this-with-your-hugo-site.com/solo/iframe-dynamic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/poc-demo.netlify.com/solo/iframe-dynamic/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/solo/iframe-dynamic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Solo Std Iframe Static</title>
-      <link>/poc-demo.netlify.com/solo/iframe-static/</link>
+      <link>http://replace-this-with-your-hugo-site.com/solo/iframe-static/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/poc-demo.netlify.com/solo/iframe-static/</guid>
+      <guid>http://replace-this-with-your-hugo-site.com/solo/iframe-static/</guid>
       <description></description>
     </item>
     
