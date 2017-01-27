@@ -11,19 +11,30 @@
 
   <h2>Dynamic using iframe</h2>
   <a class="tvp-solo"
-  data-id="solo-1"
-  data-domain='//pocsite.netlify.com'
-  href='//pocsite.netlify.com/tvpwidget/solo-1/'>
-  TVPage Solo
+  data-id="solo-2"
+  data-domain='//pocsite.netlify.com'>
+  TVPage Widget
   </a>
   <script>
+    window.__TVPage__ = window.__TVPage__ || {};
+    __TVPage__.config = __TVPage__.config || {};
+    __TVPage__.config['solo-2'] = {
+      loginid: '1758799',
+      channel: {
+        id: '84956291',
+        parameters: {
+          referenceId: 'test'
+        }
+      }
+    };
+
     (function(d,l) {
-    var s = d.createElement('script');
-    if (d.getElementById(l)) return;
-    s.src = '//pocsite.netlify.com/loader.min.js';
-    s.id = l;
-    d.body.appendChild(s);
-  })(document,'tvp-loader');
+      var s = d.createElement('script');
+      if (d.getElementById(l)) return;
+      s.src = '//pocsite.netlify.com/loader.min.js';
+      s.id = l;
+      d.body.appendChild(s);
+    })(document,'tvp-loader');
   </script>
 </body>
 </html>
