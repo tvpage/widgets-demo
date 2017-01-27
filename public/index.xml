@@ -9,6 +9,42 @@
     <atom:link href="poc-demo.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Iframe static host https</title>
+      <link>/poc-demo.netlify.com/solo/iframe-static-host-https/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/poc-demo.netlify.com/solo/iframe-static-host-https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inline dynamic host https</title>
+      <link>/poc-demo.netlify.com/solo/iframe-dynamic-host-https/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/poc-demo.netlify.com/solo/iframe-dynamic-host-https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inline dynamic host https</title>
+      <link>/poc-demo.netlify.com/solo/inline-dynamic-host-https/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/poc-demo.netlify.com/solo/inline-dynamic-host-https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inline dynamic host https</title>
+      <link>/poc-demo.netlify.com/solo/inline-static-host-https/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/poc-demo.netlify.com/solo/inline-static-host-https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Solo</title>
       <link>/poc-demo.netlify.com/solo/host-page-multiple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -104,24 +140,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/poc-demo.netlify.com/solo/iframe-dynamic-host/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Solo Std Iframe Static</title>
-      <link>/poc-demo.netlify.com/solo/iframe-static/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/poc-demo.netlify.com/solo/iframe-static/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Solo Std Iframe Static Host</title>
-      <link>/poc-demo.netlify.com/solo/iframe-static-host/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/poc-demo.netlify.com/solo/iframe-static-host/</guid>
       <description></description>
     </item>
     

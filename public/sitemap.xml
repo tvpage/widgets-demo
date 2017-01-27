@@ -6,6 +6,22 @@
   </url>
   
   <url>
+    <loc>/poc-demo.netlify.com/solo/iframe-static-host-https/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/iframe-dynamic-host-https/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/inline-dynamic-host-https/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/inline-static-host-https/</loc>
+  </url>
+  
+  <url>
     <loc>/poc-demo.netlify.com/solo/host-page-multiple/</loc>
   </url>
   
