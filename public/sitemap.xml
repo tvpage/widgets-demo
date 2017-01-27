@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/poc-demo.netlify.com/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/all-together/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/inline-dynamic/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/iframe-dynamic/</loc>
+  </url>
+  
+  <url>
+    <loc>/poc-demo.netlify.com/solo/iframe-static/</loc>
+  </url>
+  
+</urlset>

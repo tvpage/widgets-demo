@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Solo All together</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+  body {
+    max-width: 640px;
+    padding: 0;
+    margin: 0 auto;
+  }
+</style>
+<body>
+
+
+  <h2>Dynamic using iframe</h2>
+  <a class="tvp-solo"
+  data-id="solo-2"
+  data-domain='//pocsite.netlify.com'>
+  TVPage Widget
+  </a>
+  <script>
+    window.__TVPage__ = window.__TVPage__ || {};
+    __TVPage__.config = __TVPage__.config || {};
+    __TVPage__.config['solo-2'] = {
+      loginid: '1758799',
+      channel: {
+        id: '84956291',
+        parameters: {
+          referenceId: 'test'
+        }
+      }
+    };
+
+    (function(d,l) {
+      var s = d.createElement('script');
+      if (d.getElementById(l)) return;
+      s.src = '//pocsite.netlify.com/loader.min.js';
+      s.id = l;
+      d.body.appendChild(s);
+    })(document,'tvp-loader');
+  </script>
+
+  <h2>Dynamic using inline</h2>
+  <a class="tvp-solo"
+  data-id="solo-3"
+  data-embedmethod="inline"
+  data-domain='//pocsite.netlify.com'>
+  TVPage Widget
+  </a>
+  <script>
+    window.__TVPage__ = window.__TVPage__ || {};
+    __TVPage__.config = __TVPage__.config || {};
+    __TVPage__.config['solo-3'] = {
+      loginid: '1758799',
+      channel: {
+        id: '84956291',
+        parameters: {
+          referenceId: '01'
+        }
+      }
+    };
+    
+    (function(d,l) {
+      var s = d.createElement('script');
+      if (d.getElementById(l)) return;
+      s.src = '//pocsite.netlify.com/loader.min.js';
+      s.id = l;
+      d.body.appendChild(s);
+    })(document,'tvp-loader');
+  </script>
+
+  <h2>Static using iframe</h2>
+  <a class="tvp-solo"
+  data-id="solo-1"
+  data-domain='//pocsite.netlify.com'
+  href='//pocsite.netlify.com/tvpwidget/solo-1/'>
+  TVPage Solo
+  </a>
+  <script>
+    (function(d,l) {
+    var s = d.createElement('script');
+    if (d.getElementById(l)) return;
+    s.src = '//pocsite.netlify.com/loader.min.js';
+    s.id = l;
+    d.body.appendChild(s);
+  })(document,'tvp-loader');
+  </script>
+  
+</body>
+</html>

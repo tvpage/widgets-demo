@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solo-rsses on My New Hugo Site</title>
+    <link>poc-demo.netlify.com/solo/index.xml</link>
+    <description>Recent content in Solo-rsses on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="poc-demo.netlify.com/solo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Solo All together</title>
+      <link>/poc-demo.netlify.com/solo/all-together/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/poc-demo.netlify.com/solo/all-together/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solo Inline Dynamic</title>
+      <link>/poc-demo.netlify.com/solo/inline-dynamic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/poc-demo.netlify.com/solo/inline-dynamic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solo Lazy Iframe Dynamic</title>
+      <link>/poc-demo.netlify.com/solo/iframe-dynamic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/poc-demo.netlify.com/solo/iframe-dynamic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solo Std Iframe Static</title>
+      <link>/poc-demo.netlify.com/solo/iframe-static/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/poc-demo.netlify.com/solo/iframe-static/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

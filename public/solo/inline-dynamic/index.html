@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Solo Inline Dynamic</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h2>Dynamic using inline</h2>
+  <a class="tvp-solo"
+  data-id="solo-3"
+  data-embedmethod="inline"
+  data-domain='//pocsite.netlify.com'>
+    TVPage Widget
+  </a>
+  <script>
+    window.__TVPage__ = window.__TVPage__ || {};
+    __TVPage__.config = __TVPage__.config || {};
+    __TVPage__.config['solo-3'] = {
+      loginid: '1758799',
+      channel: {
+        id: '84956291',
+        parameters: {
+          referenceId: '01'
+        }
+      }
+    };
+    
+    (function(d,l) {
+      var s = d.createElement('script');
+      if (d.getElementById(l)) return;
+      s.src = '//pocsite.netlify.com/loader.min.js';
+      s.id = l;
+      d.body.appendChild(s);
+    })(document,'tvp-loader');
+  </script>
+</body>
+</html>

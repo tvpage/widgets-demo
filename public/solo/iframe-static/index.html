@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Solo Std Iframe Static</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+<body>
+	<h2>Static using iframe</h2>
+	<a class="tvp-solo"
+	data-id="solo-1"
+	data-domain='//pocsite.netlify.com'
+	href='//pocsite.netlify.com/tvpwidget/solo-1/'>
+		TVPage Solo
+	</a>
+	<script>
+	(function(d,l) {
+		var s = d.createElement('script');
+		if (d.getElementById(l)) return;
+		s.src = '//pocsite.netlify.com/loader.min.js';
+		s.id = l;
+		d.body.appendChild(s);
+	})(document,'tvp-loader');
+	</script>
+</body>
+</html>
