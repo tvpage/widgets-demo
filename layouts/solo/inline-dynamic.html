@@ -8,16 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  
-  <a class="tvp-solo"
-  data-id="solo-1"
-  href="//pocsite.netlify.com/tvpwidget/solo-1">
-  TVPage Widget
-  </a>
+  <h2>Dynamic using inline</h2>
   <a class="tvp-solo"
   data-id="solo-3"
-  data-domain="//pocsite.netlify.com">
-  TVPage Widget
+  data-embedmethod="inline"
+  data-domain='//{{ .Param "extDomain" }}'>
+    TVPage Widget
   </a>
   <script>
     window.__TVPage__ = window.__TVPage__ || {};
@@ -31,8 +27,14 @@
         }
       }
     };
+    
+    (function(d,l) {
+      var s = d.createElement('script');
+      if (d.getElementById(l)) return;
+      s.src = '//{{ .Param "extDomain" }}/loader{{ if not (getenv "HUGO_DEBUG") }}.min{{ end }}.js';
+      s.id = l;
+      d.body.appendChild(s);
+    })(document,'tvp-loader');
   </script>
-  <script src="//pocsite.netlify.com/loader.js"></script>
-
 </body>
 </html>
